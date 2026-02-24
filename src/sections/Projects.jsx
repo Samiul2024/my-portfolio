@@ -1,4 +1,35 @@
 const projects = [
+
+  {
+    name: "CareerCode (Full Stack MERN Platform)",
+    desc: "A full-stack career guidance and practice platform with secure authentication, social login, and protected backend APIs built using the MERN stack.",
+    live: "https://career-code-dd759.web.app/",
+    github: {
+      client: "https://github.com/Samiul2024/CareerCodeClient-practice-",
+      server: "https://github.com/Samiul2024/CareerCodeServer-practice-",
+    },
+    techStack: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Firebase Authentication",
+      "Firebase Hosting",
+      "Vercel"
+    ],
+    features: [
+      "User Registration & Login system",
+      "Secure JWT-based authentication",
+      "Google Social Login integration",
+      "Logout functionality with token handling",
+      "Protected API routes",
+      "Full MERN architecture (Client + Server separation)",
+      "RESTful backend API with MongoDB",
+      "Frontend deployed on Firebase Hosting",
+      "Backend deployed on Vercel"
+    ],
+  },
   {
     name: "Coffee Store App (Full Stack)",
     desc: "Full CRUD app for managing coffee products | Separate admin dashboard | Add/Edit/Delete coffee items.",
@@ -24,11 +55,11 @@ const projects = [
     ],
   },
   {
-    name: "Awake Me – Alarm PWA",
+    name: "Awake Me - Alarm PWA",
     desc: "A progressive web application alarm clock with audio preview, silence button, and everyday only once repeat functionality.",
     live: "https://awake-me.netlify.app/",
     github: "https://github.com/Samiul2024/awake-me",
-    techStack: ["React", "PWA", "HTML5 Audio API"],
+    techStack: ["React", "PWA", "HTML5, Audio API"],
     features: [
       "Audio preview for alarm sounds",
       "Silence button",
