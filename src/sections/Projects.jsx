@@ -34,7 +34,10 @@ const projects = [
     name: "Coffee Store App (Full Stack)",
     desc: "Full CRUD app for managing coffee products | Separate admin dashboard | Add/Edit/Delete coffee items.",
     live: "https://coffee-store-app-59ed4.web.app/",
-    github: "https://github.com/Samiul2024/coffee-store-app",
+    github: {
+      client: "https://github.com/Samiul2024/coffee-store-client.git",
+      server: "https://github.com/Samiul2024/coffee-store-server.git",
+    },
     techStack: ["React", "Firebase", "TailwindCSS"],
     features: [
       "Full CRUD operations",
