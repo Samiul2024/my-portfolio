@@ -39,13 +39,18 @@ export default function Skills() {
       <h2 className="text-3xl font-bold mb-6"> My Tech Stack</h2>
       <div className="flex flex-wrap justify-center gap-3">
         {skills.map((skill, i) => (
-          <span
+          <a
             key={i}
-            className="flex items-center gap-2 px-3 py-2 bg-white border border-gray-200 rounded-full text-sm shadow hover:shadow-md transition-all duration-200 cursor-pointer hover:bg-blue-50"
+            href={`https://www.google.com/search?q=${encodeURIComponent(
+              skill.name + " documentation"
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-3 py-2 bg-white border border-gray-200 rounded-full text-sm shadow hover:shadow-md transition-all duration-200 cursor-pointer hover:bg-blue-50 hover:scale-105"
           >
             <span className="text-lg">{skill.icon}</span>
             <span>{skill.name}</span>
-          </span>
+          </a>
         ))}
       </div>
     </section>

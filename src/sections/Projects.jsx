@@ -94,8 +94,8 @@ const projects = [
   {
     name: "Lawyer Booking App",
     desc: "An appointment booking platform connecting clients with lawyers. Features booking management, user authentication, and admin control panel.",
-    live: "https://lawyer-booking-website.netlify.app/", // Replace with your real link
-    github: "https://github.com/Samiul2024/lawyer-booking-app", // Replace with your repo
+    live: "https://lawyer-booking-website.netlify.app/", // Replace with  real link
+    github: "https://github.com/Samiul2024/lawyer-booking-app", // Replace with  repo
     techStack: ["React", "Firebase", "Redux", "Material-UI"],
     features: [
       "User authentication and profile",
@@ -162,7 +162,46 @@ export default function Projects() {
               >
                 Live Demo
               </a>
-              <a
+              {/* If github is a string */}
+              {typeof proj.github === "string" && (
+                <a
+                  href={proj.github}
+                  className="text-white bg-gray-800 hover:bg-gray-900 shadow-md hover:shadow-lg px-5 py-2 rounded-lg transition-all duration-300 font-semibold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              )}
+
+              {/* If github is an object (client/server) */}
+              {typeof proj.github === "object" && (
+                <>
+                  {proj.github.client && (
+                    <a
+                      href={proj.github.client}
+                      className="text-white bg-gray-700 hover:bg-gray-800 shadow-md hover:shadow-lg px-5 py-2 rounded-lg transition-all duration-300 font-semibold"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub Client
+                    </a>
+                  )}
+
+                  {proj.github.server && (
+                    <a
+                      href={proj.github.server}
+                      className="text-white bg-black hover:bg-gray-900 shadow-md hover:shadow-lg px-5 py-2 rounded-lg transition-all duration-300 font-semibold"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub Server
+                    </a>
+                  )}
+                </>
+              )}
+
+              {/* <a
                 href={proj.github}
                 className="text-white bg-gray-800 hover:bg-gray-900 shadow-md hover:shadow-lg px-5 py-2 rounded-lg transition-all duration-300 font-semibold"
                 target="_blank"
@@ -170,6 +209,7 @@ export default function Projects() {
               >
                 GitHub
               </a>
+              */}
             </div>
           </div>
         ))}
