@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -22,49 +23,53 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-white shadow-md" : "bg-transparent"} `}>
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-base-100 shadow-md" : "bg-transparent"
+        }`}
+    >
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-xl font-bold text-blue-700 cursor-pointer">
+
+        <h1 className="text-xl font-bold text-primary cursor-pointer">
           Samiul.dev
         </h1>
 
         <div className="md:hidden">
-          <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl">
+          <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl text-base-content">
             ☰
           </button>
         </div>
 
-        <ul className="hidden md:flex gap-6 font-medium text-gray-700">
+        <ul className="hidden md:flex gap-6 font-medium text-base-content">
           {navItems.map((item) => (
             <li key={item.label}>
               <Link
                 to={item.to}
-                spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="hover:text-blue-600 transition cursor-pointer"
+                className="hover:text-primary transition cursor-pointer"
               >
                 {item.label}
               </Link>
             </li>
           ))}
         </ul>
+
+        {/* 🔥 THEME BUTTON */}
+        <ThemeToggle />
       </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
-        <ul className="md:hidden px-6 pb-4 text-center bg-white shadow">
+        <ul className="md:hidden px-6 pb-4 text-center bg-base-100 shadow">
           {navItems.map((item) => (
-            <li key={item.label} className="py-2 border-b">
+            <li key={item.label} className="py-2 border-b border-base-300">
               <Link
                 to={item.to}
-                spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
                 onClick={() => setMenuOpen(false)}
-                className="text-gray-800 hover:text-blue-600 transition cursor-pointer"
+                className="text-base-content hover:text-primary transition cursor-pointer"
               >
                 {item.label}
               </Link>
@@ -77,4 +82,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

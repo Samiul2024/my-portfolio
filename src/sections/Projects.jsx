@@ -111,16 +111,20 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="p-6 bg-gray-50">
+    <section className="p-6 bg-base-100 text-base-content transition-colors duration-500">
       <h2 className="text-2xl font-bold text-center mb-6">Projects</h2>
+
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((proj, index) => (
           <div
             key={index}
-            className="p-4 border rounded-lg shadow hover:shadow-xl transition-all duration-300 bg-white"
+            className="p-4 border rounded-lg shadow hover:shadow-xl transition-all duration-300 bg-base-200"
           >
+            {/* Project Name */}
             <h3 className="text-xl font-semibold mb-2">{proj.name}</h3>
-            <p className="text-sm text-gray-600 mb-3">{proj.desc}</p>
+
+            {/* Description */}
+            <p className="text-sm text-base-content/70 mb-3">{proj.desc}</p>
 
             {/* Tech Stack */}
             <div className="mb-2">
@@ -128,7 +132,7 @@ export default function Projects() {
               {proj.techStack?.map((tech, i) => (
                 <span
                   key={i}
-                  className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-1"
+                  className="inline-block bg-primary/20 text-primary px-2 py-1 text-xs rounded mr-1 mb-1"
                 >
                   {tech}
                 </span>
@@ -138,7 +142,7 @@ export default function Projects() {
             {/* Features */}
             <div className="mb-4">
               <strong>Features:</strong>
-              <ul className="list-disc list-inside text-gray-700 text-sm">
+              <ul className="list-disc list-inside text-base-content/80 text-sm">
                 {proj.features?.map((feature, i) => (
                   <li key={i}>{feature}</li>
                 ))}
@@ -156,20 +160,21 @@ export default function Projects() {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-2">
               <a
                 href={proj.live}
-                className="text-white bg-green-600 hover:bg-green-700 shadow-md hover:shadow-lg px-5 py-2 rounded-lg transition-all duration-300 font-semibold"
+                className="btn btn-sm btn-success"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Live Demo
               </a>
-              {/* If github is a string */}
+
+              {/* GitHub Links */}
               {typeof proj.github === "string" && (
                 <a
                   href={proj.github}
-                  className="text-white bg-gray-800 hover:bg-gray-900 shadow-md hover:shadow-lg px-5 py-2 rounded-lg transition-all duration-300 font-semibold"
+                  className="btn btn-sm btn-neutral"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -177,24 +182,22 @@ export default function Projects() {
                 </a>
               )}
 
-              {/* If github is an object (client/server) */}
               {typeof proj.github === "object" && (
                 <>
                   {proj.github.client && (
                     <a
                       href={proj.github.client}
-                      className="text-white bg-gray-700 hover:bg-gray-800 shadow-md hover:shadow-lg px-5 py-2 rounded-lg transition-all duration-300 font-semibold"
+                      className="btn btn-sm btn-primary"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       GitHub Client
                     </a>
                   )}
-
                   {proj.github.server && (
                     <a
                       href={proj.github.server}
-                      className="text-white bg-black hover:bg-gray-900 shadow-md hover:shadow-lg px-5 py-2 rounded-lg transition-all duration-300 font-semibold"
+                      className="btn btn-sm btn-accent"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -203,16 +206,6 @@ export default function Projects() {
                   )}
                 </>
               )}
-
-              {/* <a
-                href={proj.github}
-                className="text-white bg-gray-800 hover:bg-gray-900 shadow-md hover:shadow-lg px-5 py-2 rounded-lg transition-all duration-300 font-semibold"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-              */}
             </div>
           </div>
         ))}

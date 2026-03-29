@@ -5,23 +5,23 @@ export default function Resume() {
   const resumeId = "1YwYYwlFuTsxo4CvOnKzrrkRtHDTF9d-A";
 
   return (
-    <section className="text-center p-6 bg-blue-50">
+    <section className="text-center p-6 bg-base-100 text-base-content transition-colors duration-500">
       <h2 className="text-2xl font-bold mb-6">Resume</h2>
 
       {/* Buttons */}
       <div className="flex justify-center gap-4 flex-wrap mb-6">
         <button
           onClick={() => setShowResume(!showResume)}
-          className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 hover:scale-105 transition-all duration-300 shadow-md"
+          className="btn btn-primary btn-sm"
         >
-          {showResume ? " Hide Resume" : "View Resume"}
+          {showResume ? "Hide Resume" : "View Resume"}
         </button>
 
         <a
           href={`https://drive.google.com/uc?export=download&id=${resumeId}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 hover:scale-105 transition-all duration-300 shadow-md"
+          className="btn btn-neutral btn-sm"
         >
           Download PDF
         </a>
@@ -29,7 +29,7 @@ export default function Resume() {
 
       {/* Resume Viewer */}
       {showResume && (
-        <div className="w-full max-w-4xl mx-auto h-[600px] border rounded-lg shadow-lg overflow-hidden">
+        <div className="w-full max-w-4xl mx-auto h-[600px] border rounded-lg shadow-lg overflow-hidden bg-base-200 transition-colors duration-500">
           <iframe
             src={`https://drive.google.com/file/d/${resumeId}/preview`}
             className="w-full h-full"

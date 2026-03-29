@@ -31,12 +31,14 @@ export default function Skills() {
     { name: "WordPress", icon: <FaWordpress className="text-blue-800" /> },
     { name: "Figma", icon: <FaFigma className="text-pink-500" /> },
     { name: "Notion", icon: <SiNotion className="text-black" /> },
-    // { name: "Productivity", icon: <TbTools className="text-gray-600" /> },
   ];
 
   return (
-    <section id="skills" className="p-6 bg-gray-100 text-center">
-      <h2 className="text-3xl font-bold mb-6"> My Tech Stack</h2>
+    <section
+      id="skills"
+      className="p-6 bg-base-100 text-base-content text-center transition-colors duration-500"
+    >
+      <h2 className="text-3xl font-bold mb-6">My Tech Stack</h2>
       <div className="flex flex-wrap justify-center gap-3">
         {skills.map((skill, i) => (
           <a
@@ -46,7 +48,7 @@ export default function Skills() {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-3 py-2 bg-white border border-gray-200 rounded-full text-sm shadow hover:shadow-md transition-all duration-200 cursor-pointer hover:bg-blue-50 hover:scale-105"
+            className="flex items-center gap-2 px-3 py-2 bg-base-200 border border-base-content rounded-full text-sm shadow hover:shadow-md transition-all duration-200 cursor-pointer hover:scale-105"
           >
             <span className="text-lg">{skill.icon}</span>
             <span>{skill.name}</span>
