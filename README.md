@@ -1,85 +1,100 @@
-# Md. Samiulla Hossen  
-### Front-End Developer | MERN Stack Enthusiast
+# 👋 Hi, I'm Md. Samiulla Hossen
 
-🌐 **Live Portfolio:** https://mdsamiullahossen.netlify.app/  
-🐙 **GitHub:** https://github.com/Samiul2024  
-
----
-
-## 👋 Professional Summary
-
-I am a passionate and self-driven **Front-End Web Developer** with strong foundations in modern JavaScript technologies and the MERN stack.
-
-Currently pursuing **B.Sc. (Hons) in Zoology** at GOVT. BL College under the National University of Bangladesh, I have developed strong analytical thinking and problem-solving skills that I apply to web development.
-
-I focus on building:
-
-- Responsive and accessible web applications  
-- Clean and maintainable codebases  
-- Performance-optimized user interfaces  
-- Real-world full-stack applications  
-
-I am actively seeking opportunities to contribute to professional development teams and grow as a software engineer.
+🚀 MERN Stack Developer | React Enthusiast | Problem Solver
+🎓 B.Sc. (Hons) in Zoology, National University, Bangladesh
+💡 Passionate about building real-world scalable web applications
 
 ---
 
-## 🛠 Technical Skills
+## 🧑‍💻 Tech Stack
 
-### Frontend Development
-- HTML5  
-- CSS3  
-- JavaScript (ES6+)  
-- React.js  
-- Tailwind CSS  
-- Bootstrap  
+### 🚀 Frontend
 
-### Backend & Database
-- Node.js  
-- Express.js  
-- MongoDB  
-- Firebase Authentication  
+* React.js
+* JavaScript (ES6+)
+* Tailwind CSS
+* Bootstrap
 
-### Tools & Deployment
-- Git & GitHub  
-- Netlify  
-- Vercel  
-- Firebase Hosting  
+### ⚙️ Backend
 
----
+* Node.js
+* Express.js
+* MongoDB
+* Firebase Authentication
 
-## 🚀 Demonstrations
+### 💳 Tools & Services
 
-- Strong understanding of React component architecture  
-- Modern UI/UX design principles  
-- Responsive design implementation  
-- Clean project structuring  
-- Deployment and production-ready setup  
-
-This portfolio reflects both my technical capability and my commitment to continuous learning.
+* Stripe Payment Gateway
+* React Query (TanStack)
+* Axios
+* Git & GitHub
+* Vercel / Netlify
 
 ---
 
-## 📈 Professional Goals
+## 🔥 Featured Project: SamShift (Parcel Management System)
 
-- Contribute to scalable real-world applications  
-- Work in collaborative development teams  
-- Strengthen backend architecture skills  
-- Advance toward full-stack web development roles  
+A full-stack logistics platform where users can send parcels, track deliveries, and admins manage riders and assignments.
+
+### ✨ Key Features
+
+* 🔐 Firebase Authentication (Email + Social Login)
+* 📦 Parcel Creation & Tracking System
+* 💳 Secure Online Payment Integration (Stripe)
+* 👤 Role-Based Access (User / Admin / Rider)
+* 🚚 Rider Assignment System (District-based matching)
+* 📊 Admin Dashboard with Real-time Data
+* 📍 Parcel Tracking History
+
+### 🛠 Tech Used
+
+* React + Tailwind CSS (Frontend)
+* Node.js + Express (Backend)
+* MongoDB (Database)
+* Firebase Admin SDK (Auth Verification)
+
+---
+
+## 📈 What Sets This Work Apart
+
+* Clean and scalable backend architecture
+* Secure API handling with JWT verification
+* Real-world business logic (parcel lifecycle, payments, delivery flow)
+* Optimized data fetching using React Query
+* Modular and reusable component design
+
+---
+
+## 💼 Experience
+
+* Former TypeWriter at Robi 10 Minute School
+* Built multiple full-stack projects using MERN
+* Hands-on experience with authentication, dashboards, and APIs
+
+---
+
+## 🎯 Current Focus
+
+* Building production-level MERN applications
+* Improving system design & scalability
+* Exploring freelance and remote opportunities
 
 ---
 
 ## 📬 Contact
 
-If you are a recruiter, collaborator, or hiring manager:
-
-📧 Email: mdsamiullahossen@gmail.com  
-🌐 Portfolio: https://mdsamiullahossen.netlify.app/  
-🐙 GitHub: https://github.com/Samiul2024  
-💼 LinkedIn: https://www.linkedin.com/in/md-samiulla-hossen/  
+* 📧 Email: [mdsamiullahossen@gmail.com](mailto:mdsamiullahossen@gmail.com)
+* 🌐 Portfolio: (https://mdsamiullahossen.vercel.app/)
+* 💼 GitHub: [https://github.com/Samiul2024 ](https://github.com/Samiul2024 )
 
 ---
 
-## ⭐ Note for Recruiters
+## ⚡ Fun Facts
 
-This repository represents my personal branding and technical growth journey.  
-For additional projects, please explore my GitHub profile.
+* 🏃 Passionate runner
+* 🏊 Swimmer
+* ⚽ Football defender
+
+---
+
+> Building, learning, and improving every single day 🚀
